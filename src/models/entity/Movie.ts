@@ -31,14 +31,18 @@ export class Movie {
   @Column({ name: "studio", type: "varchar" })
   studio: String
 
-  @Column({ name: "stars", type: "varchar" })
-  stars: String
+  @Column({ name: "image", type: "varchar" })
+  image: String
 
-  @CreateDateColumn({
-    name: "created_at",
-    type: "timestamptz",
-    default: () => "CURRENT_TIMESTAMPTZ(6)",
-    onUpdate: "CURRENT_TIMESTAMPTZ(6)",
-  })
-  createdAt: Date
+  @Column({ name: "note", type: "int" })
+  note: number
+
+  @Column({ name: "actors", type: "varchar" })
+  actors: String
+
+  @Column({ name: "awards", type: "varchar" })
+  awards: String
+
+  @Column({ name: "release_date", type: "timestamptz" })
+  releaseDate: Date
 }
