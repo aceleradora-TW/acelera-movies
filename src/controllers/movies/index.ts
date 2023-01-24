@@ -1,3 +1,4 @@
+import { Login } from "@models/entity/Login"
 import { Movies } from "@models/entity/Movies"
 import { getRepository } from "typeorm"
 
