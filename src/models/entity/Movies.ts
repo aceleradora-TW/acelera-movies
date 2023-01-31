@@ -6,32 +6,41 @@ export class Movies {
   id: number
 
   @Column({ name: "title", type: "varchar" })
-  title: string
+  title: String
 
-  @Column({ name: "subtitle", type: "varchar" })
-  subtitle: string
-
-  @Column({ name: "resume", type: "text" })
-  resume: string
-
-  @Column({ name: "releaseDate", type: "varchar" })
-  releaseDate: Date
-
-  @Column({ name: "image", type: "bytea" })
-  image: string
-
-  @Column({ name: "director", type: "varchar" })
-  director: string
-
-  @Column({ name: "writer", type: "varchar" })
-  writer: string
+  @Column({ name: "gender", type: "varchar" })
+  gender: String
 
   @Column({ name: "classification", type: "varchar" })
-  classification: string
+  classification: String
+
+  @Column({ name: "subtitle", type: "varchar" })
+  subtitle: String
+
+  @Column({ name: "image", type: "varchar" })
+  image: String
+
+  @Column({ name: "release_date", type: "varchar" })
+  release_date: String
+
+  @Column({ name: "director", type: "varchar" })
+  director: String
+
+  @Column({ name: "writer", type: "varchar" })
+  writer: String
 
   @Column({ name: "studio", type: "varchar" })
-  studio: string
+  studio: String
 
-  @Column({ name: "stars", type: "varchar" })
-  stars: string
+  @Column({ name: "actors", type: "text" })
+  actors: String
+
+  @Column({ name: "resume", type: "text" })
+  resume: String
+
+  @Column({ name: "awards", type: "text" })
+  awards: String
+
+  @Column({ name: "note", type: "int" })
+  note: Number
 }
